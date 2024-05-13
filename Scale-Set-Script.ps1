@@ -12,5 +12,5 @@ Import-PackageProvider NuGet -Force
 . '.\InstallOrUpdateDockerEngine.ps1' -Force -envScope "Machine"
 
 
-shutdown -r 5
+Restart-Computer -force
 Start-Service docker
