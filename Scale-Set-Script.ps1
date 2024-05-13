@@ -10,3 +10,5 @@ Install-PackageProvider NuGet -Force
 Import-PackageProvider NuGet -Force
 
 . '.\InstallOrUpdateDockerEngine.ps1' -Force -envScope "Machine"
+
+shutdown -r 5
