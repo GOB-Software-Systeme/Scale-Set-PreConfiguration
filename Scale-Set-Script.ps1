@@ -8,9 +8,3 @@ if ((Get-ItemProperty $regKey -Name 'LongPathsEnabled').LongPathsEnabled -eq 0) 
 Write-Host "Set NuGet PackageProvider"
 Install-PackageProvider NuGet -Force
 Import-PackageProvider NuGet -Force
-
-. '.\InstallOrUpdateDockerEngine.ps1' -Force -envScope "Machine"
-
-
-Restart-Computer -force
-Start-Service docker
